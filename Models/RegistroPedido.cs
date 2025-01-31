@@ -8,7 +8,7 @@ namespace Models;
     public bool Pagado {get;set;}
     public DateTime Registro{get;private set;}
 
-    public RegistroPedido(Clientes cliente) {
+    public RegistroPedido(string nombre, double precio, Clientes clientes) : base(nombre,precio) {
         productos = new List<(Producto,int)>();
         Clientes = clientes;
         Registro = DateTime.Now;
