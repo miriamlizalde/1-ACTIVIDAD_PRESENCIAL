@@ -10,7 +10,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 BebidasController.InicializarDatos();
-
+ClientesControllers.InicializarDatos();
+ComidaControllers.InicializarDatos();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

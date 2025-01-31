@@ -21,7 +21,7 @@ namespace PresencialesAPI.Controllers
             {
                 return NotFound();
             }
-            return Ok(clientes);
+            return Ok(cliente);
         }
 
         [HttpPost]
