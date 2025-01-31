@@ -1,28 +1,27 @@
-using Microsoft.Net.Http.Headers;
 namespace Models;
- class RegistroPedido : Producto{
-    private List<(Producto, int)> productos;
-    private Clientes Clientes{get;set;}
-    public static int Identificador {get; private set;} = 0;
-    public int ID {get; set;} = 0;
-    public bool Pagado {get;set;}
-    public DateTime Registro{get;private set;}
 
-    public RegistroPedido(string nombre, double precio, Clientes clientes) : base(nombre,precio) {
-        productos = new List<(Producto,int)>();
-        Clientes = clientes;
+public class RegistroPedido : Producto {
+    private List<(Producto, int)> productos;
+    public static int nextId = 1;
+    public new int Id { get; private set;} 
+    public bool Pagado { get; set; }
+    public DateTime Registro { get; set; }
+
+    public RegistroPedido(string nombre, double precio) : base(nombre, precio) {
+        productos = new List<(Producto, int)>();
         Registro = DateTime.Now;
-        Identificador++;
-        ID = Identificador;
+        Id = nextId++;
     }
 
-    public double CalcularTotal(){
+    public void AgregarProducto(Producto producto, int cantidad) {
+        productos.Add((producto, cantidad));
+    }
+
+    public double CalcularTotal() {
         double total = 0;
-        foreach(var(producto, cantidad) in productos) {
+        foreach (var (producto, cantidad) in productos) {
             total += producto.Precio * cantidad;
         }
         return total;
     }
-
-
 }

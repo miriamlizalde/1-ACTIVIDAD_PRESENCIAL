@@ -12,6 +12,7 @@ builder.Services.AddSwaggerGen();
 BebidasController.InicializarDatos();
 ClientesControllers.InicializarDatos();
 ComidaControllers.InicializarDatos();
+RegistroPedidoControllers.InicializarDatos();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

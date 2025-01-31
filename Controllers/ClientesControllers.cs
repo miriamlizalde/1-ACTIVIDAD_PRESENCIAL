@@ -7,7 +7,7 @@ namespace PresencialesAPI.Controllers
 
     public class ClientesControllers : ControllerBase
     {
-        private static List<Clientes> clientes = new List<Clientes>();
+        public static List<Clientes> clientes = new List<Clientes>();
 
         [HttpGet]
         public ActionResult<IEnumerable<Clientes>> GetClientes(){
@@ -21,7 +21,7 @@ namespace PresencialesAPI.Controllers
             {
                 return NotFound();
             }
-            return Ok(cliente);
+            return Ok(clientes);
         }
 
         [HttpPost]
