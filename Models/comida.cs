@@ -6,7 +6,7 @@ class InvalidIngredientesException : Exception{
 
 public class Comida : Producto {
     public static int nextId = 1;
-    public int Id {get; private set;}
+    public new int Id {get; private set;}
     public bool ConGluten {get;set;}
 
     public string Ingredientes {get;set;}

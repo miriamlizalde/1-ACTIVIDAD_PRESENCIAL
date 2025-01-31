@@ -61,7 +61,13 @@ namespace PresencialesAPI.Controllers
         public static void InicializarDatos()
         {
             bebidas.Add(new Bebidas("Té",2.20,true));
+            bebidas.Add(new Bebidas("Cortado",1.20,true));
+            bebidas.Add(new Bebidas("Cafe con leche",1.40,true));
+            bebidas.Add(new Bebidas("Solo",1.10,true));
+            bebidas.Add(new Bebidas("Manzanilla",2.00,true));
+            bebidas.Add(new Bebidas("Infusión de frutos rojos",2.23,true));
         }
+        
 
     }
 }

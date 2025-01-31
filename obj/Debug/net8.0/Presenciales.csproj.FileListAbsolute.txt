@@ -30,3 +30,4 @@ D:\2ºDAW\Presenciales\obj\Debug\net8.0\refint\Presenciales.dll
 D:\2ºDAW\Presenciales\obj\Debug\net8.0\Presenciales.pdb
 D:\2ºDAW\Presenciales\obj\Debug\net8.0\Presenciales.genruntimeconfig.cache
 D:\2ºDAW\Presenciales\obj\Debug\net8.0\ref\Presenciales.dll
+D:\2ºDAW\Presenciales\obj\Debug\net8.0\Presenciales.sourcelink.json
