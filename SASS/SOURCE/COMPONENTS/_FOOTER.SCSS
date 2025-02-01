@@ -1,0 +1,14 @@
+@use '../BASE/_VARIABLES' as *;
+footer {
+    background: $primary-color;
+    color: $text-color;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-family: $PRIMARY-family;
+
+    p {
+        color: $text-color;
+        margin: 0;
+    }
+}

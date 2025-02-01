@@ -1,0 +1,35 @@
+@use '../BASE/_VARIABLES' as *;
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $primary-color;
+    color: $text-color;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: $PRIMARY-family;
+
+    .logo h1 {
+
+       
+        margin: 0;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            color: $text-color;
+            display: inline;
+            margin: 0 15px;
+
+            a {
+                color: $white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+}
